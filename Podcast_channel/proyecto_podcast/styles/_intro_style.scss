@@ -1,0 +1,145 @@
+
+
+
+.introduccion{
+    margin: 10px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+   div{
+       position: relative;
+       display: block;
+  
+            h1{
+                font-family: 'IBM Plex Sans', sans-serif;
+                color:$terciario;
+                font-size: 2.25rem;
+                line-height: 2.3rem;
+                font-weight: lighter;
+                margin: 30px 40px 20px 30px;
+                text-align: left;
+                .salto{
+                    display: block;
+
+                }
+                .tachar{
+                    text-decoration: line-through;
+                }
+                em{
+                    color:$terciario;
+                    font-size: 4rem;
+                }
+                
+            }
+            .intro{
+                height: 10.56vh;
+                p{
+                    font-family: 'IBM Plex Mono', monospace;
+                    font-size: 14px;
+                    color: $terciario;
+                    letter-spacing: 0;
+                    line-height: 22px;
+                    margin: 30px 40px 20px 30px;
+                    font-weight: 700;
+
+                }
+                
+                
+            }
+            .intro2{
+                display: none;
+                visibility: hidden;
+                p{
+                    display: none;
+                    visibility: hidden;
+                }
+            }
+            }
+                
+                
+            .episodios{
+                margin-bottom: 1rem;
+                position:relative;
+                left: 10%;
+                right: 10%;
+                font-family: IBMPlexMono-Medium;
+                font-size: 16px;
+                font-weight: bold;
+                color: $terciario;
+                letter-spacing: 0;
+                text-align: center;
+                line-height: 22px;
+                background: $boton;
+                height: 2rem;
+                width: 80%;
+                border:none;
+                transform: translateY(-1.5rem);
+                
+
+            }
+        
+         
+}
+@media screen and (min-width: 768px){
+
+    .introduccion{
+        display: flex;
+        align-items: flex-start;
+        padding: 4rem;
+        transform: translateY(20%);
+        div{
+
+        
+
+        h1{
+        font-size: 4rem;
+        width: 1024px;
+    
+        .salto{
+            display: inline;
+        }
+        em{
+            color: $secundario;
+        }
+    }
+        .intro{
+            display: none;
+        }
+        .intro2{
+            display: unset;
+            visibility: unset;
+            height: 10.56vh;
+            width: 50%;
+                p{
+                    display: inline-block;
+            visibility: visible;
+                    font-family: 'IBM Plex Mono', monospace;
+                    font-size: 16px;
+                    color: $terciario;
+                    letter-spacing: 0;
+                    line-height: 22px;
+                    margin: 30px 40px 20px 30px;
+                    font-weight: 700;
+
+                }
+        }
+
+        
+        .episodios{
+            width: 16%;
+            position: unset;
+            padding: 4px 4px 4px 4px;
+            margin-left: 2%;
+            margin-bottom: 10rem;
+
+            transform: translateY(1rem);
+            
+            &:hover{
+                background-image: $gradientboton;
+                color: $primario;
+            }
+        }
+    }
+    }
+}

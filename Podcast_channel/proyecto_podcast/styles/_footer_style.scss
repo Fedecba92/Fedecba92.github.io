@@ -1,0 +1,45 @@
+footer{
+    text-align: center;
+
+    p{
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 14px;
+        color: $terciario;
+        letter-spacing: 0;
+        line-height: 22px;
+        margin: 30px 40px 20px 30px;
+        font-weight: 700;
+    }
+    .social{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        padding: 0;
+        li{
+            a{
+                i{
+                    color:$terciario;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    footer{
+        display: flex;
+    justify-content: center;
+
+    p{
+        text-align: left;
+    }
+
+        ul{
+            display: flex;
+    margin-left: 30%;
+    li{
+        margin: 30px 40px 20px 30px;
+    }
+        }
+    }
+}

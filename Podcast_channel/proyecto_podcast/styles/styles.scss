@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap');
+@import '_variables';
+/*INICIO DEL HEADER*/
+@import '_header_style';
+/*FIN DEL HEADER*/
+
+/*INICIO INTRO Y TITULO*/
+@import '_intro_style';
+/*FIN INTRO Y TITULO*/
+
+/*INICIO EPISODIOS*/
+@import '_episodios_style';
+/*FIN DE EPISODIOS*/
+
+/*INICIO NOSOTROS(DE DONDE VENIMOS?)*/
+@import '_nosotros_style';
+/*FIN NOSOTROS*/
+
+/*INICIO ENTREVISTAS*/
+@import '_entrev_style';
+/*FIN DE ENTREVISTAS*/
+
+/*INICIO TOPICOS*/
+@import '_topicos_style';
+/*FIN TOPICOS*/
+
+/*INICIO NOVEDADES*/
+@import '_novedades_style';
+/*FIN NOVEDADES*/
+
+/*INICIO FOOTER*/
+@import '_footer_style';
+/*FIN DEL FOOTER*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+

@@ -1,0 +1,166 @@
+
+.header {
+	background-color: $primario;
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+	position: static;
+    width: 100%;
+nav{
+img {
+	height: 5vh;
+    width: 5vw;
+    position: relative;
+    bottom: -10px;
+    left: 10px;
+}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		overflow: hidden;
+		
+	}
+	li {
+        background-color: $secundario;
+       
+		a { 
+            font-size: 1rem;
+            color: $primario;
+           font-family:  'IBM Plex Mono', monospace;
+			display: block;
+			padding: 20px 20px;
+			text-decoration: none;
+			
+		}
+	}
+	.menu-btn {
+		display: none;
+		&:checked {
+			~ {
+				.menu {
+					max-height: 240px;
+				}
+				.menu-icon {
+					.navicon {
+						background: transparent;
+						&:before {
+							transform: rotate(-45deg);
+						}
+						&:after {
+							transform: rotate(45deg);
+						}
+					}
+					&:not(.steps) {
+						.navicon {
+							&:before {
+								top: 0;
+							}
+							&:after {
+								top: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.logo {
+		display: block;
+		float: left;
+		text-decoration: none;
+	}
+	.menu {
+		clear: both;
+		max-height: 0;
+		transition: max-height .2s ease-out;
+	}
+	.menu-icon {
+		cursor: pointer;
+		display:block;
+		float: right;
+		padding: 28px 20px;
+		position: relative;
+		user-select: none;
+		.navicon {
+			background: #333;
+			display: block;
+			height: 2px;
+			position: relative;
+			transition: background .2s ease-out;
+			width: 18px;
+			&:before {
+				background: #333;
+				content: '';
+				display: block;
+				height: 100%;
+				position: absolute;
+				transition: all .2s ease-out;
+				width: 100%;
+				top: 5px;
+			}
+			&:after {
+				background: #333;
+				content: '';
+				display: block;
+				height: 100%;
+				position: absolute;
+				transition: all .2s ease-out;
+				width: 100%;
+				top: -5px;
+			}
+		}
+	}
+}
+}
+@media screen and (min-width: 768px) {
+	.header {
+		nav{
+		li {
+            float: left;
+            background-color: $primario;
+			a {
+                color:$terciario ;
+                padding: 20px 30px;
+                
+                &:hover{
+                    color:$boton;
+                    text-decoration: line-through;
+                }
+                &:active{
+                    color: $terciario;
+                    text-decoration: line-through;
+                }
+			}
+		}
+		.menu {
+			clear: none;
+			float: right;
+			max-height: none;
+		}
+		.menu-icon {
+			display: none;
+		}
+	}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

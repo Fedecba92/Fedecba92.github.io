@@ -1,0 +1,92 @@
+
+
+
+.nosotros{
+.phone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20%;
+
+    img{
+        height: 80vh;
+        width: 70vw;
+    }
+}
+.texto{
+
+            h2{
+                font-family: 'IBM Plex Sans', sans-serif;
+                font-size: 36px;
+                font-weight: lighter;
+                color: $terciario;
+                letter-spacing: 0;
+                line-height: 42px;
+                margin: 30px 40px 20px 30px;
+                text-align: left;
+
+                .salto{
+                    display: block;
+                }
+            }
+            .parrafo{
+                font-family: 'IBM Plex Mono', monospace;
+                font-size: 14px;
+                color: $terciario;
+                letter-spacing: 0;
+                line-height: 22px;
+                font-weight: 700;
+            }
+            .uno{
+                margin: 30px 40px 20px 30px;
+            }
+
+            .dos{
+                margin: 30px 40px 20px 30px;
+            }
+        }
+}
+
+@media screen and (min-width: 768px){
+
+    .nosotros{
+        height: fit-content;
+        width: fit-content;
+
+        position: relative;
+        margin: 0;
+        display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content:center;
+    transform: translateY(-5%);
+
+    .texto{
+        display: inline-block;
+        padding: 20px;
+    width: 50%;
+    margin: 10px;
+    .parrafo{
+        text-align: left;
+    }
+    }
+
+    .phone{
+        position: relative;
+        top: 50%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    img{
+        height: 116.19718309859155vh;
+        width: 33.49926793557833vw;
+    }
+    
+    
+    }
+}
+}
